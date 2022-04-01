@@ -38,24 +38,7 @@ int main() {
 	Phone* phone3 = new Phone("mi", "redmi8", 500, 256, 150, 9, "white");
 	Phone* phone4 = new Phone("mi", "redmi9", 1000, 524, 150, 9, "black");
 
-	int a, b, c;
-
-	if (a > b && a > c) {
-		phone = phoneA;
-
-	}
-	else if (b > c) {
-		phone = phoneB;
-
-		}
-	else{
-		phone = phoneC;
-	}
-
-
-
-
-
+	
 	delete phone;
 	delete phone2;
 	delete phone3;
