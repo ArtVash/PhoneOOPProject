@@ -33,16 +33,16 @@ int main() {
 	cout << "________________________________" << endl;*/
 
 
-	Phone* phone = new Phone("mi", "redmi6", 200, 64, 150, 9, "red");
-	Phone* phone2 = new Phone("mi", "redmi7", 300, 128, 150, 9, "blue");
-	Phone* phone3 = new Phone("mi", "redmi8", 500, 256, 150, 9, "white");
-	Phone* phone4 = new Phone("mi", "redmi9", 1000, 524, 150, 9, "black");
+	//Phone* phone = new Phone("mi", "redmi6", 200, 64, 150, 9, "red");
+	//Phone* phone2 = new Phone("mi", "redmi7", 300, 128, 150, 9, "blue");
+	//Phone* phone3 = new Phone("mi", "redmi8", 500, 256, 150, 9, "white");
+	//Phone* phone4 = new Phone("mi", "redmi9", 1000, 524, 150, 9, "black");
 
-	
-	delete phone;
-	delete phone2;
-	delete phone3;
-	delete phone4;
+	//
+	//delete phone;
+	//delete phone2;
+	//delete phone3;
+	//delete phone4;
 
 	return 0;
 }
