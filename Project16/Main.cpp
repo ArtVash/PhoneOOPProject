@@ -1,48 +1,30 @@
-#include "Phone.h" 
+#include "Phone.h"
 
-int main() {
+int main() {;
 
-	/*Phone phone{};*/
+	Phone Phone1(" ", "", 200, 36);
+	Phone Phone2(" ", "", 300, 128);
+	Phone Phone3(" ", "", 500, 256);
 
-
-	/*cout << "Input brand of phone: ";
-	cin >> phone.brand;
-
-	cout << "Input model of phone: ";
-	cin >> phone.brand;
-
-	cout << "Input price of phone: ";
-	cin >> phone.price;
-
-	cout << "Input memory of phone: ";
-	cin >> phone.memory;
-
-	cout << "Input weight of phone: ";
-	cin >> phone.weight;
-
-	cout << "Input screen_size of phone: ";
-	cin >> phone.screen_size;
-
-	cout << "Input color of phone: ";
-	cin >> phone.color;
-
-	cout << "________________________________" << endl;
-
-	cout << phone.getInfo() << endl;
-	int array[10]{};
-	cout << "________________________________" << endl;*/
+	Phone1.setBrand("Mi");
+	Phone2.setBrand("Nokia");
+	Phone3.setBrand("Samsung");
 
 
-	//Phone* phone = new Phone("mi", "redmi6", 200, 64, 150, 9, "red");
-	//Phone* phone2 = new Phone("mi", "redmi7", 300, 128, 150, 9, "blue");
-	//Phone* phone3 = new Phone("mi", "redmi8", 500, 256, 150, 9, "white");
-	//Phone* phone4 = new Phone("mi", "redmi9", 1000, 524, 150, 9, "black");
+	Phone1.setModel("1");
+	Phone2.setModel("2");
+	Phone3.setModel("3");
 
-	//
-	//delete phone;
-	//delete phone2;
-	//delete phone3;
-	//delete phone4;
+
+
+	string dependency = Phone1.getModel();
+	string dependency = Phone2.getModel();
+	string dependency = Phone3.getModel();
+
+	cout << Phone1.getInfo() << endl;
+	cout << Phone2.getInfo() << endl;
+	cout << Phone3.getInfo() << endl;
+
 
 	return 0;
 }
