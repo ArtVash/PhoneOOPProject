@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="H.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="Phone.h" />
     <ClInclude Include="Shop.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Phone.cpp" />
     <ClCompile Include="Shop.cpp" />
   </ItemGroup>

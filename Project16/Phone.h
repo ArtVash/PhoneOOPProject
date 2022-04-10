@@ -5,9 +5,15 @@ private:
 	string brand;
 	string model;
 	double price;
-	double memory;	
+	double memory;
 
 public:
+	/*static const int MIN_MARK = 0;
+	static const int MAX_MARK = 10;
+
+	static const int MIN_MARK = 0;
+	static const int MAX_MARK = 10;*/
+
 	Phone();
 	Phone(string brand, string model, double price, double memory);
 	~Phone();

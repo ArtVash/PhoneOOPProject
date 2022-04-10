@@ -4,24 +4,39 @@
 
 class Shop {
 private:
-	string adress;
+	string address;
 	int floors;
 	int entances;
 	int flat;
+	Phone* list;
+	int size;
+	int index;
 
 public:
-
-	Shop(string adress, int floors, int entances, int flat);
-
-	string getAdress();
-	void setAdress(string adress);
-	void Phoneshop(string adress);
+	Shop();
+	Shop(string adress, int floors, int entances, int flat, Phone* list, int size, int index);
+	~Shop();
+	
+	string getAddress();
+	void setAddress(string adress);
+	
 	int getFloors();
 	void setFloors(int floors);
+
 	int getEntances();
 	void setEntances(int entances);
+
 	int getflat();
 	void setflat(int flat);
+
+	void add(Phone phone);
+	void remove(int index);
+
+	Phone getPhone(int index);
+	int getSize();
+	void setSize(int index);
+
+	
 	string getInfo();
 
 };
