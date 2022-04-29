@@ -21,7 +21,7 @@ public:
 	Point2D operation + (Point2D point) const;
 	Point2D operation - (Point2D point) const;
 	int operation * (Point2D point) const;
-
+	
 	void operator ++();
 	void operator --();
 
