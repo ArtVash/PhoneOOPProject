@@ -2,11 +2,15 @@
 
 class Manager {
 private:
-	string name;
+	double calculateTheMostExpensive
+
 public:
 	Manager();
 	Manager(string name);
+	~Manager();
 
-	//
+
+
+
 
 };

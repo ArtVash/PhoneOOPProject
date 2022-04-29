@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f4894e4d-6b84-454f-93fd-6fb5961828e4}</ProjectGuid>
-    <RootNamespace>Project16</RootNamespace>
+    <ProjectGuid>{cfbcf223-9ed2-4c9c-a0a7-78a03a084929}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,17 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="H.h" />
-    <ClInclude Include="Manager.h" />
-    <ClInclude Include="Phone.h" />
-    <ClInclude Include="Shop.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="Point2D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Manager.cpp" />
-    <ClCompile Include="Phone.cpp" />
-    <ClCompile Include="Shop.cpp" />
-    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

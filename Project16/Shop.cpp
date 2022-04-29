@@ -2,25 +2,26 @@
 
 Shop::Shop() {
 	address = "no address";
-	//...
+	floors = 2;
+	entances = 5;
+	flat = 3;
 }
 
-Shop::Shop(string adress, int floors, int entances, int flat, Phone* list, int size, int index) {
+Shop::Shop(string adress, int floors, int entances, int flat, Phone* list, int size, int index, int phone) {
 	this->address = adress;
 	this->floors = floors;
 	this->entances = entances;
 	this->flat = flat;
 	this->list = list;
 	this->size = size;
+	this->phone = phone;
 	this->index = index;
 
 }
 
 Shop::~Shop() {
-	address = "no address";
-	//...
-}
 
+}
 
 
 string Shop::getAddress() {
@@ -63,8 +64,17 @@ int Shop::getSize() {
 	return size;
 }
 
-void Shop::setSize(int index) {
+
+int Shop::getPhone() {
+	return size;
+}
+
+void Shop::setPhone(int index) {
 	this->index = index;
+}
+
+int Shop::get(int index) {
+	return size;
 }
 
 

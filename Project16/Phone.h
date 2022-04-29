@@ -1,7 +1,16 @@
 #include "Header.h" 
 
+
+
+
+
 class Phone {
+	friend void changePrice(Phone& ph);
+
+
 private:
+	static int count;
+
 	string brand;
 	string model;
 	double price;
@@ -14,9 +23,12 @@ public:
 	static const int MIN_MARK = 0;
 	static const int MAX_MARK = 10;*/
 
+	
 	Phone();
 	Phone(string brand, string model, double price, double memory);
 	~Phone();
+
+	static int getCount();
 
 	string getBrand();
 	void setBrand(string brand);

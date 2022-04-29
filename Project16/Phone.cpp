@@ -1,6 +1,9 @@
 #include "Phone.h"
 
+int Phone::count = 0;
+
 Phone::Phone() {
+	count++;
 	this->brand = "no name";
 	this->model = "no model";
 	this->price = 0;
@@ -8,6 +11,7 @@ Phone::Phone() {
 }
 
 Phone::Phone(string brand, string model, double price, double memory) {
+	count++;
 	this->brand = brand;
 	this->model = model;
 	this->price = price;
@@ -15,7 +19,11 @@ Phone::Phone(string brand, string model, double price, double memory) {
 }
 
 Phone::~Phone() {
-	
+	count--;
+}
+
+int Phone::getCount() {
+	return count;
 }
 
 string Phone::getBrand() {

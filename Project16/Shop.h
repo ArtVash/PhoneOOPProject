@@ -11,10 +11,11 @@ private:
 	Phone* list;
 	int size;
 	int index;
+	int phone;
 
 public:
 	Shop();
-	Shop(string adress, int floors, int entances, int flat, Phone* list, int size, int index);
+	Shop(string adress, int floors, int entances, int flat, Phone* list, int size, int index, int phone);
 	~Shop();
 	
 	string getAddress();
@@ -32,10 +33,12 @@ public:
 	void add(Phone phone);
 	void remove(int index);
 
-	Phone getPhone(int index);
-	int getSize();
-	void setSize(int index);
+	int getPhone();
+	void setPhone(int index);
 
+	int getSize();
+
+	Phone get(int index);
 	
 	string getInfo();
 
